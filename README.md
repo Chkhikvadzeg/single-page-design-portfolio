@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-#[Live Page](https://chkhikvadzeg.github.io/single-page-desiggn-portfolio)
+#[Live Page](https://chkhikvadzeg.github.io/single-page-design-portfolio)
