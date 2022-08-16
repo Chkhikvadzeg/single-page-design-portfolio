@@ -88,6 +88,17 @@ h3 {
     background-color: var(--clr-purple);
 }
 
+.button-arrow:disabled {
+    opacity: .5;
+}
+
+.button-arrow:disabled:hover,
+.button-arrow:disabled:focus {
+    background-color: var(--clr-black);
+    cursor: not-allowed;
+}
+
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.125rem;
@@ -236,16 +247,22 @@ body {
 
 .slider__content {
     display: flex;
-    overflow: hidden;
+    grid-auto-flow: column;
+    overflow-x: scroll;
     gap: 30px;
     scroll-behavior: smooth;
     margin: 56px 0;
+    overflow-y: hidden;
 }
 
 .slider__content-item {
-    width: 540px;
-    height: 360px;
+    width: 75%;
+    max-width: 500px;
     flex-shrink: 0;
+}
+
+.slider__content::-webkit-scrollbar {
+    display: none;
 }
 
 .slider__content-item > img {
@@ -260,6 +277,7 @@ body {
     justify-content: center;
     gap: 16px;
 }
+
 
 /* CTA */
 
